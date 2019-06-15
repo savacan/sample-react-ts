@@ -1,10 +1,9 @@
 import * as React from 'react';
-import * as emotion from '@emotion/core';
-
+import {css} from '@emotion/core';
 
 const Hoge:React.FC = () => {
     return (
-        <div css={emotion.css({color: 'red'})}>Hoge red!</div>
+        <div css={css({color: 'red'})}>Hoge red!</div>
     )
 }
 
