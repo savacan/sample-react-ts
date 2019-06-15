@@ -5,13 +5,14 @@
 
         "module": "ESNEXT",
         "target": "ESNext",
-        "jsx": "react",
+        "jsx": "preserve",
 
         "strict": true,
         "noUnusedLocals": true,
         "noImplicitReturns": true, 
 
-        
+        "moduleResolution": "node",
+
         "typeRoots": [
             "node_modules/@types"
         ]
