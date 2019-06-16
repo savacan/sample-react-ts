@@ -6,7 +6,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "webpack-dev-server --hot --inline",
-    "build": "webpack"
+    "build": "webpack",
+    "build:prod": "webpack --mode=production"
   },
   "devDependencies": {
     "@babel/core": "^7.4.5",
@@ -25,6 +26,7 @@
   "dependencies": {
     "@emotion/babel-preset-css-prop": "^10.0.9",
     "@emotion/core": "^10.0.10",
+    "emotion-theming": "^10.0.10",
     "react": "^16.8.6",
     "react-dom": "^16.8.6"
   }

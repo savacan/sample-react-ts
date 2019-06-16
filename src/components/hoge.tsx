@@ -1,10 +1,22 @@
 import * as React from 'react';
-import {css} from '@emotion/core';
+import { css } from '@emotion/core';
+import { withTheme } from 'emotion-theming'
+import { Theme, PaletteType } from '../styles/theme';
 
-const Hoge:React.FC = () => {
+interface HogeProps {
+    theme: Theme,
+    color: PaletteType
+}
+
+
+const Hoge:React.FC<HogeProps> = (props: HogeProps) => {
+    const { theme, color } = props
+    const styles = css({
+        color: theme.palette[color]
+    })
     return (
-        <div css={css({color: 'red'})}>Hoge red!</div>
+        <div css={styles}>Hoge {color}!</div>
     )
 }
 
-export default Hoge;
+export default withTheme(Hoge);
